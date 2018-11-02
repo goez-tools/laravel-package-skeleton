@@ -1,0 +1,46 @@
+{
+  "name": "goez/b2",
+  "description": "A skeleton for building Laravel package",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "yourname@example.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^6.0|^7.0",
+    "mockery/mockery": "^1.0",
+    "codedungeon/phpunit-result-printer": "^0.20",
+    "orchestra/testbench": "^3.7"
+  },
+  "suggest": {
+    "spatie/phpunit-watcher": "Automatically rerun PHPUnit tests when source code changes (Install globally)",
+    "mikey179/vfsStream": "Virtual file system to mock the real file system in unit tests."
+  },
+  "autoload": {
+    "psr-4": {
+      "Ns\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ns\\ExampleServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "process-timeout": 0
+  },
+  "license": "MIT"
+}
